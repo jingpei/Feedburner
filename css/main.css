@@ -7,11 +7,17 @@ html {
   box-sizing: border-box;
   padding: 30px 30px;
   border-right: 1px solid lightgrey;
-  box-shadow: 1px 0px 15px lightgrey;
+  box-shadow: 1px -8px 15px lightgrey;
+}
+
+.header {
+  font-size: 3em;
+  margin-top: 0px;
 }
 
 #feedInfo {
   font-weight: 300;
+  border-top: 1px solid lightgrey;
 }
 
 .headSummary {
@@ -21,9 +27,22 @@ html {
   line-height: 1em;
 }
 
+.category {
+  border-radius: 3px;
+  display: inline;
+  padding: 3px 6px;
+  font-weight: 300;
+  font-size: 0.8em;
+  color: cadetblue;
+  background-color: lightgrey;
+}
+
 .aside {
-  /*padding-top: 10px;*/
   font-size: 3em;
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 h1 {
@@ -34,24 +53,31 @@ h1 {
 time {
   display: block;
   margin-bottom: 10px;
-  /*font-weight: 300;*/
 }
 
 img {
-  display: inline;
-  box-sizing: border-box;
-  float: left;
-  width: 30%;
+  /*display: block;*/
+  /*box-sizing: border-box;*/
+/*  float: left;
+  width: 30%;*/
   margin-top: 5px;
 }
+
 
 .entrySummary {
   box-sizing: border-box;
   font-size: 1.2em;
-  display: inline;
+/*  display: inline;
   float: right;
-  width: 68%;
+  width: 68%;*/
   font-weight:300;
+}
+
+.fullSize {
+  width: 100%;
+  float: none;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 div .entry {
