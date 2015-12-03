@@ -3,10 +3,10 @@
     <h1 class="header">LATEST</h1>
     <div class="entry" ng-repeat='entry in entries'>
         <h1><a href="#/{{$index}}">{{ entry.title }}</a></h1>
-        <time>{{ entry.publishedDate }}</time>
+        <time>{{ entry.pubDate }}</time>
       <div class="row">
-        <img class="col-md-3 col-sm-1" src="{{ entry.mediaGroups[0].contents[0].thumbnails[0].url }}"></img>
-        <summary class="entrySummary col-md-9 col-sm-1">{{ entry.contentSnippet }}</summary>
+        <img class="col-md-3 col-sm-1" src="{{ entry['media:thumbnail']['@url']}}"></img>
+        <summary class="entrySummary col-md-9 col-sm-1">{{ entry['itunes:summary'] }}</summary>
         <div class="clearfix"></div>
       </div>
     </div>
